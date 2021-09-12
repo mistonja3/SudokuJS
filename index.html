@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <select class="change-grid">
+        <option value="none" selected>Select the dificulty...</option>
+        <option value="Easy">Easy</option>
+        <option value="Hard">Hard</option>
+    </select>
     <div class="container">
         <h1 class="result-text"></h1>
         <div class="timer">
@@ -19,57 +24,306 @@
                 <button id="reset-btn" style="color: #fff"><i class="fa fa-stop"></i></button>
             </div>
         </div>
-        <div class="board">
+        <div class="board small hide">
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <div class="num">
-                <input class="input-num" min="1" max="9" type="number">
+                <input class="input-num" min="1" max="4" type="number">
             </div>
             <span class="line"></span>
             <span class="line2"></span>
+        </div>
+        <div class="board big hide">
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <div class="num">
+                <input class="input-num big" min="1" max="9" type="number">
+            </div>
+            <span class="big-lines line3"></span>
+            <span class="big-lines line4"></span>
+            <span class="big-lines line5"></span>
+            <span class="big-lines line6"></span>
         </div>
         <div class="buttons-wrapper">
             <button id="clear-btn">Clear</button>
@@ -77,9 +331,12 @@
             <button id="solve-btn">Solve</button>
             <button id="next-btn">Next Sudoku</button>
         </div>
-        
-
     </div>
+
     <script src="script.js"></script>
+    <script src="stopwatch.js"></script>
+    <script src="bigPuzzle.js"></script>
+    <script src="smallPuzzle.js"></script>
+
 </body>
 </html>
