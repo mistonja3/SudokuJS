@@ -4,6 +4,7 @@ var inputNumbers = document.querySelectorAll(".input-num")
 var inputNumbersBig = document.querySelectorAll(".input-num.big")
 var solveBtn = document.getElementById("solve-btn")
 var nextBtn = document.getElementById("next-btn")
+var undoBtn = document.getElementById("undo-btn")
 
 //the value of the select will be none at the start of the game
 if(document.querySelector('.change-grid').value == "none"){
@@ -75,7 +76,8 @@ document.querySelector('.change-grid').onchange = function(){
         solveBtn.addEventListener('click', solveBigPuzzle, false)
         //checking if our solution is correct or not
         resultBtn.addEventListener('click', checkBigPuzzle, false)
-
+        //make some empty fields so the player can play
+        nextBtn.addEventListener('click', nextBigSudoku, false)
     }
 }
 

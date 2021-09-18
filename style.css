@@ -151,9 +151,9 @@ div{
 }
 
 .board.big .num{
-    width: 11.1%;
-    height: 11.1%;
-    margin: auto;
+    width: 11.11%;
+    height: 11.11%;
+    /* margin: auto; */
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */

@@ -76,35 +76,109 @@ function solveBigPuzzle(){
         }
         else if(i <= 17)
         {
-            inputNumbersBig[i].value = newBoard[1][i - 9]
+            inputNumbersBig[i].value = newBoard[1][i % 9]
         }
         else if(i <= 26)
         {
-            inputNumbersBig[i].value = newBoard[2][i - 18]
+            inputNumbersBig[i].value = newBoard[2][i % 9]
         }
         else if(i <= 35)
         {
-            inputNumbersBig[i].value = newBoard[3][i - 27]
+            inputNumbersBig[i].value = newBoard[3][i % 9]
         }
         else if(i <= 44)
         {
-            inputNumbersBig[i].value = newBoard[4][i - 36]
+            inputNumbersBig[i].value = newBoard[4][i % 9]
         }
         else if(i <= 53)
         {
-            inputNumbersBig[i].value = newBoard[5][i - 45]
+            inputNumbersBig[i].value = newBoard[5][i % 9]
         }
         else if(i <= 62)
         {
-            inputNumbersBig[i].value = newBoard[6][i - 54]
+            inputNumbersBig[i].value = newBoard[6][i % 9]
         }
         else if(i <= 71)
         {
-            inputNumbersBig[i].value = newBoard[7][i - 63]
+            inputNumbersBig[i].value = newBoard[7][i % 9]
         }
         else if(i <= 80)
         {
-            inputNumbersBig[i].value = newBoard[8][i - 72]
+            inputNumbersBig[i].value = newBoard[8][i % 9]
+        }
+    }
+}
+
+function nextBigSudoku(){
+    document.querySelector(".result-text").innerHTML = ""
+    //get first row of random numbers
+    var newBoard = bigPuzzleMakeVector(randomUniqueNum(9,9))
+    //solve the puzzle based on the first row
+    bigPuzzleSolve(newBoard);
+    for(let i = 0; i < inputNumbersBig.length; i++){
+        inputNumbersBig[i].classList.remove("success")
+        inputNumbersBig[i].classList.remove("fail")
+        if(i <= 8){
+            inputNumbersBig[i].value = newBoard[0][i]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
+        }
+        else if(i <= 17)
+        {
+            inputNumbersBig[i].value = newBoard[1][i % 9]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
+        }
+        else if(i <= 26)
+        {
+            inputNumbersBig[i].value = newBoard[2][i % 9]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
+        }
+        else if(i <= 35)
+        {
+            inputNumbersBig[i].value = newBoard[3][i % 9]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
+        }
+        else if(i <= 44)
+        {
+            inputNumbersBig[i].value = newBoard[4][i % 9]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
+        }
+        else if(i <= 53)
+        {
+            inputNumbersBig[i].value = newBoard[5][i % 9]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
+        }
+        else if(i <= 62)
+        {
+            inputNumbersBig[i].value = newBoard[6][i % 9]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
+        }
+        else if(i <= 71)
+        {
+            inputNumbersBig[i].value = newBoard[7][i % 9]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
+        }
+        else if(i <= 80)
+        {
+            inputNumbersBig[i].value = newBoard[8][i % 9]
+            if(i % 1 == getRandomInt(2)){
+                inputNumbersBig[i].value = ""
+            }
         }
     }
 }
